@@ -1,6 +1,7 @@
 import { Image } from "expo-image";
 import { Platform, StyleSheet } from "react-native";
 
+import { CarouselWithDots } from "@/components/Carousel";
 import { Collapsible } from "@/components/Collapsible";
 import { ExternalLink } from "@/components/ExternalLink";
 import ParallaxScrollView from "@/components/ParallaxScrollView";
@@ -125,6 +126,10 @@ export default function TabTwoScreen() {
                         </ThemedText>
                     ),
                 })}
+            </Collapsible>
+            <Collapsible title="Carousel With Dots">
+                <ThemedText>There you go!</ThemedText>
+                <CarouselWithDots />
             </Collapsible>
         </ParallaxScrollView>
     );
